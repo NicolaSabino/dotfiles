@@ -16,19 +16,27 @@ Each Commit should follow the followint template
 Detailed descrfiption of the feature
 ```
 
-## How to propose a new feature
+## Project setup
 
 1. Fork this project in your git profile.
-1. Create a branch following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `proposal/my_feature_name`
+1. Clone your new repository.
+1. Add a secondary remote `git remote add nicola_project git@github.com:NicolaSabino/dotfiles.git`.
+1. Synch your main  branch `git fetch nicola_project/main && git merge nicola_project/main`.
+
+Is possible to see all the remote of your project via `git remove -v`
+
+## How to propose a new feature
+
+1. Create a branch from `main` following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `proposal/my_feature_name`.
 1. Edit the TODO section of `README.md` file.
 1. Create a pull request.
 
 ## How to contribute
 
-1. Fork this project in your git profile.
 1. Pick one of the missing features.
-1. Create a branch following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `feature/my_feature_name`
-1. Create a pull request 
+1. Create a branch from `main` following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `feature/my_feature_name`.
+1. Mark as completed the feature in the `README.md` TODO list.
+1. Create a pull request.
 
 ## TODO list
 
