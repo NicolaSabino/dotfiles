@@ -1,53 +1,16 @@
-# dotfiles
+# Dotfiles
 
-Collection of dotfiles
+Collection of dotfiles for linux systems.
 
-## Abstarct
+The main idea is to have a repository to fork on new linux systems to prepare quickly the environment.
 
-The main idea is to have a repository that contains the most usefull and common dotfiles used to quick setun a new linux machine or a WSL system.
-Everything has to be self contained in repositpoy and has to be called via a single scritpt `setup.sh`.
+This is a simple git project aimed to introduce new comers to open-source, pull requests, contribution and coding.
+Have a look [CONTRIBUTING.md](CONTRIBUTING.md) for more details on how to contribute.
 
-## Commit tempalte
+## Project requirements
+1. Everything has to be self contained in repository and has to be called via a single script `setup.sh`.
 
-Each Commit should follow the followint template
-```
-[my_feature_name] Short change description
+2. All configurations file has to be stored in a folder called `.dotfiles`
 
-Detailed descrfiption of the feature
-```
-
-## Project setup
-
-1. Fork this project in your git profile.
-1. Clone your new repository.
-1. Add a secondary remote `git remote add nicola_project git@github.com:NicolaSabino/dotfiles.git`.
-1. Synch your main  branch `git fetch nicola_project/main && git merge nicola_project/main`.
-
-Is possible to see all the remote of your project via `git remove -v`
-
-## How to propose a new feature
-
-1. Create a branch from `main` following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `proposal/my_feature_name`.
-1. Edit the TODO section of `README.md` file.
-1. Create a pull request.
-
-## How to contribute
-
-1. Pick one of the missing features.
-1. Create a branch from `main` following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `feature/my_feature_name`.
-1. Mark as completed the feature in the `README.md` TODO list.
-1. Create a pull request.
-
-## TODO list
-
-Please pick a task from the followings
- 
-  - [x] create_script: Create `setup.sh` file
-  - [ ] create_folder: Create `.dotfiles` folder
-  - [ ] no_root: Ensure that `setup.sh` cannot be run in root mode.
-  - [ ] create_folde_home:
-      Running the script `setup.sh` it creates a copy of .dotfiles in the $HOME folder of the user.
-  - [ ] backup_files:
-      In script files, perform a buckup of all files that start with a . like `.bashrc`
-      that are stored in `$HOME` foler, copying themm in `$HOME\.dotfiles`, renaming them
-      as `.backupt_****` like `.backup_bashrc`
+3. Each time we run `setup.sh` it has to create a backup of all 
+    config files that are going to be changed.
