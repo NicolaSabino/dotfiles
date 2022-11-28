@@ -19,7 +19,7 @@ Detailed descrfiption of the feature
 ## How to propose a new feature
 
 1. Fork this project in your git profile.
-1. Create a breach following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `proposal/my_feature_name`
+1. Create a branch following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `proposal/my_feature_name`
 1. Edit the TODO section of `README.md` file.
 1. Create a pull request.
 
@@ -27,7 +27,7 @@ Detailed descrfiption of the feature
 
 1. Fork this project in your git profile.
 1. Pick one of the missing features.
-1. Create a breach following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `feature/my_feature_name`
+1. Create a branch following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `feature/my_feature_name`
 1. Create a pull request 
 
 ## TODO list
