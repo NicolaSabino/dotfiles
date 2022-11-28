@@ -34,7 +34,7 @@ Detailed descrfiption of the feature
 
 Please pick a task from the followings
  
-  - [ ] create_script: Create `setup.sh` file
+  - [x] create_script: Create `setup.sh` file
   - [ ] create_folder: Create `.dotfiles` folder
   - [ ] no_root: Ensure that `setup.sh` cannot be run in root mode.
   - [ ] create_folde_home:
