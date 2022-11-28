@@ -29,7 +29,6 @@ Detailed descrfiption of the feature
 1. Pick one of the missing features.
 1. Create a branch following this template, using [snake case](https://it.wikipedia.org/wiki/Snake_case) for the name:  `feature/my_feature_name`
 1. Create a pull request 
-
 ## TODO list
 
 Please pick a task from the followings
