@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Create an environment variable for dev folder
+export DEV=$HOME/dev
