@@ -3,7 +3,6 @@
 # https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/
 
 [includeIf "gitdir:~/personal/"]
-  path = ~/.gitconfig-personal
+  path = /path/to/gitconfig_personal
 [includeIf "gitdir:~/work/"]
-  path = ~/.gitconfig-work
-
+  path = /path/to/gitconfig_work
