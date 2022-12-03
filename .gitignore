@@ -1,0 +1,3 @@
+# Ignore the test folder used launching 
+# the `setup.sh` in test mode
+test/
