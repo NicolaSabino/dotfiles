@@ -1,1 +1,9 @@
-#empty gitconfig file
+# Support multimple git profile according to 
+# current workspace folder
+# https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/
+
+[includeIf "gitdir:~/personal/"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/work/"]
+  path = ~/.gitconfig-work
+
