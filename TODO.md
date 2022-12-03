@@ -13,7 +13,7 @@ List of missing functionalities suitable as firs issue because of their simplici
     Launching `setup.sh`, **in any point of the linux file system** will copy the `.dotfiles` folder contained in the repository in the `$HOME` folder of the user.
     Hint, have a look at `pushd` and `popd` bash commands.
 
-- [ ] **create_git_config**
+- [x] **create_git_config**
 
     Create in `.dotfiles` a configuration file got git called `.gitconfig`. The file has to be blank, no content, at this step.
 
