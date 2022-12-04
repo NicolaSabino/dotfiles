@@ -1,34 +1,24 @@
 # TODO list
 
-## Good first issue
-
 List of missing functionalities suitable as firs issue because of their simplicity.
 
-- [ ] **create_dev_folder**
-
-    Launching `setup.sh`, it creates the `dev` folder in user's `$HOME` if it does not exits yet.
-
-- [ ] **copy_into_home**
-
-    Launching `setup.sh`, **in any point of the linux file system** will copy the `.dotfiles` folder contained in the repository in the `$HOME` folder of the user.
-    Hint, have a look at `pushd` and `popd` bash commands.
-
+- [x] **create_dev_folder**
+- [x] **copy_into_home**
 - [x] **create_git_config**
+- [x] **backup_files**:
 
-    Create in `.dotfiles` a configuration file got git called `.gitconfig`. The file has to be blank, no content, at this step.
+## Good first issue
+
+- [ ] **help**  create an help prompt when running the script without commands
+- [ ] **start** run the script only if the user type `./setup.sh --start` or `./setup.sh -s`, otherwise prompt the help message.
 
 ## Other tasks
 
-- [ ] **backup_files**:
-
-    Code the following algorithm, expressed as [pseudo-code](https://en.wikipedia.org/wiki/Pseudocode), in `setup.sh`
-
-    ```
-    for each .config_file in .dotfiles
-    {
-        if .config_file exists in $HOME
-        {
-            copy .config_file in $HOME/.dotfiles as .backup_config_file
-        }
-    }
-    ```
+- [ ] **multi_profiles** The user is able to perform the following actions
+  - `--start --work` to setup only the work environment
+  - `--start --personal` to setup only the personal environment
+  - `--start --work --personal` to setup both environment
+  - The `--start` command has to precede the environment specifier `--work` or `--personal` 
+  - All the parameters can be expressed in a more compact way: `-s -w -p`
+  - We can mix parameters in exhaustive and compact form: `-s --work`
+  - If the multiple environment is selected we create two sub folders in `dev` called `personal` and `work`.
