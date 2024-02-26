@@ -1,8 +1,0 @@
-# Support multimple git profile according to 
-# current workspace folder
-# https://www.freecodecamp.org/news/how-to-handle-multiple-git-configurations-in-one-machine/
-
-[includeIf "gitdir:~/personal/"]
-  path = /path/to/gitconfig_personal
-[includeIf "gitdir:~/work/"]
-  path = /path/to/gitconfig_work

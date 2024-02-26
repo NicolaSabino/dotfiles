@@ -1,0 +1,10 @@
+- name: copy generic alias in home
+  copy:
+    src: generic_alias.sh
+    dest: $HOME/.generic_alias.sh
+    mode: 0666
+
+- name: source generic alias in .bashrc
+  lineinfile:
+    line: source $HOME/.generic_alias.sh
+    path: $HOME/.bashrc

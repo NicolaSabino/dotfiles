@@ -1,0 +1,32 @@
+- name: install apt packages
+  apt:
+    name: 
+      - htop
+      - git
+      - tree
+      - tmux
+      - mc
+
+- name: install snap packages
+  snap:
+    name:
+      - code
+      - logseq
+      - spotify
+
+- name: remove useless programs
+  apt:
+    name:
+      - aisleriot 
+      - gnome-sudoku 
+      - mahjongg 
+      - gnome-mahjongg 
+      - ace-of-penguins 
+      - gnomine 
+      - gbrainy 
+      - gnome-mines
+      - libreoffice-common
+      - thunderbird*
+      - transmission*
+    state: absent
+      
