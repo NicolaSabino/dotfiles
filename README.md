@@ -6,13 +6,12 @@ Collection of dotfiles for linux systems based on ansible-clone
 
 ```bash
 sudo apt update
-sudo apt install ansible
+sudo apt install ansible, git
 ansible-galaxy collection install community.general
-ansible-pull \
-    -o \
-    -e @values.yml \
-    -U https://github.com/NicolaSabino/dotfiles \
-    ubuntu.yml
+git clone https://github.com/NicolaSabino/dotfiles $HOME/.dotfiles
+pushd $HOME/.dotfiles
+ansible-playbook -e @values.yml ubuntu.yml
+popd
 ```
 
 ## Useful links
