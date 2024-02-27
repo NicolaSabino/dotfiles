@@ -3,22 +3,23 @@
   tags: packages,sudo
   connection: local
   become: true
-
   pre_tasks:
     - name: update repositories
       apt:
         update_cache: yes
       changed_when: False
-
-  tasks:
-    - include: tasks/packages.yml
+  roles:
+    - base
+    - vscode
+    - spotify
+    - logseq
 
 - hosts: localhost
   tags: user,config
   connection: local
   become: false
-  tasks:
-    - include: tasks/git.yml
-    - include: tasks/alias.yml
+  roles:
+    - git
+    - bashrc
 
     

@@ -2,19 +2,11 @@
   apt:
     name: 
       - htop
-      - git
       - tree
       - tmux
       - mc
 
-- name: install snap packages
-  snap:
-    name:
-      - code
-      - logseq
-      - spotify
-
-- name: remove useless programs
+- name: remove default programs
   apt:
     name:
       - aisleriot 
