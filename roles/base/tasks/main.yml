@@ -1,6 +1,7 @@
 - name: install apt packages
   apt:
     name: 
+      - python3.10-venv
       - htop
       - tree
       - tmux

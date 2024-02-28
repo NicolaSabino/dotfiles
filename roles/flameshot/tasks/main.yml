@@ -5,4 +5,4 @@
       - flameshot
 
 # TODO: key binding for <ctrl><shift>p to run /usr/bin/flameshot gui
-# TODO: create something to change flameshot configuration, see flameshot config command
+# TODO: create something to change flameshot configuration, see flameshot config commandcd
