@@ -1,3 +1,4 @@
 - name: install spotify
   snap:
     name: spotify
+    state: present

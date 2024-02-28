@@ -13,6 +13,7 @@
     - vscode
     - spotify
     - logseq
+    - flameshot
 
 - hosts: localhost
   tags: user,config
