@@ -1,0 +1,20 @@
+- name: Activate configuration if necessary
+  tags: airpods,apple
+  ansible.builtin.replace:
+    path: /etc/bluetooth/main.conf
+    regexp: '#ControllerMode'
+    replace: ControllerMode
+  register: bt_congiguration
+
+- name: BT configuration compatible with AIRPODS
+  tags: airpods,apple
+  ansible.builtin.replace:
+    path: /etc/bluetooth/main.conf
+    regexp: 'ControllerMode = [a-zA-Z].*'
+    replace: ControllerMode = bredr
+  register: bt_congiguration
+
+- name: Restart BT
+  tags: airpods,apple
+  command: "/etc/init.d/bluetooth restart"
+  when: bt_congiguration.changed
