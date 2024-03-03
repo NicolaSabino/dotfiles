@@ -1,10 +1,25 @@
 - name: copy generic alias in home
+  tags: shell,bash
   copy:
     src: generic_alias.sh
     dest: $HOME/.generic_alias.sh
     mode: 0666
 
+- name: copy custom functions in home
+  tags: shell,bash
+  copy:
+    src: custom_functions.sh
+    dest: $HOME/.custom_functions.sh
+    mode: 0666
+
 - name: source generic alias in .bashrc
+  tags: shell,bash
   lineinfile:
     line: source $HOME/.generic_alias.sh
+    path: $HOME/.bashrc
+
+- name: source generic alias in .bashrc
+  tags: shell,bash
+  lineinfile:
+    line: source $HOME/.custom_functions.sh
     path: $HOME/.bashrc
