@@ -1,0 +1,14 @@
+- name: install tmux
+  tags: shell,tmux
+  become: true
+  apt:
+    name: tmux
+    state: present
+
+- name: copy tmux conf in home
+  tags: shell,tmux
+  become: false
+  copy:
+    src: tmux.conf
+    dest: $HOME/.tmux.conf.sh
+    mode: 0666
